@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculation App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>💰 Calculation App</h1>
+            <p>Add rows and calculate totals instantly</p>
+        </div>
+
+        <div class="table-wrapper">
+            <table id="calcTable">
+                <thead>
+                    <tr>
+                        <th>Liters</th>
+                        <th>Rate</th>
+                        <th>Total</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <!-- Rows will be added here -->
+                </tbody>
+                <tfoot>
+                    <tr class="total-row">
+                        <td><strong id="totalLtr">0.00</strong></td>
+                        <td><strong id="totalRate">0.00</strong></td>
+                        <td><strong id="totalAmount">0.00</strong></td>
+                        <td></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+        <button class="add-btn" id="addRowBtn">
+            <span class="plus-icon">+</span>
+            Add Row
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
